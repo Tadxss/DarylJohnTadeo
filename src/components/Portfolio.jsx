@@ -45,7 +45,7 @@ const Portfolio = () => {
     }
   }, []);
   
-  const [activeSection, setActiveSection] = useState('hero');
+  // const [activeSection, setActiveSection] = useState('hero');
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -192,12 +192,10 @@ const Portfolio = () => {
               Daryl John Tadeo
             </h1>
             <h2 className="text-xl md:text-2xl text-gray-300 mb-8">
-              Full Stack Developer & UI/UX Enthusiast
+              Full Stack Developer | Creating Scalable AI-Powered Automations with n8n, AI Agents & LLMs
             </h2>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
-              3+ years of remote experience building scalable web applications with React, Angular, Node.js, and AWS. 
-              Passionate about creating innovative solutions that drive business growth.
-            </p>
+3+ years of remote experience building scalable web applications with React, Angular, Node.js, and AWS. Now expanding into AI automation—using LLMs, AI agents, and tools like n8n, Make, and LangChain to streamline business workflows. Focused on delivering smart, end-to-end solutions that drive real impact.            </p>
           </div>
           
           <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -249,14 +247,13 @@ const Portfolio = () => {
             <div>
               <h3 className="text-2xl font-semibold mb-4 text-white">Professional Background</h3>
               <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-                I'm a passionate Full Stack Developer with over 3 years of remote experience in designing and implementing 
-                scalable web applications. I specialize in modern JavaScript frameworks, cloud architecture, and creating 
-                seamless user experiences.
+                I'm a Full Stack Developer with 3+ years of remote experience building scalable web apps. I specialize in modern JavaScript frameworks, cloud architecture, and seamless user experiences.
+              </p>
+              <p className="text-lg text-gray-300 mb-6 leading-relaxed">
+                Lately, I’ve been diving into AI automation—using LLMs, AI agents, and tools like n8n, Make, LangChain, and vector databases to create smart, efficient workflows.
               </p>
               <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-                My journey began with a Bachelor's degree in Information Technology from Gordon College, where I graduated 
-                Cum Laude. Since then, I've worked with innovative companies, building everything from serverless applications 
-                to complex e-commerce platforms.
+                I hold a Bachelor's in Information Technology from Gordon College (Cum Laude) and have built everything from serverless apps to complex e-commerce platforms.
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
@@ -269,7 +266,7 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            {/* <div className="grid grid-cols-2 gap-4">
               <div className="bg-gradient-to-br from-purple-600/20 to-pink-600/20 p-6 rounded-xl border border-purple-500/20">
                 <Code className="w-12 h-12 text-purple-400 mb-4" />
                 <h3 className="font-semibold mb-2">Frontend Development</h3>
@@ -290,7 +287,33 @@ const Portfolio = () => {
                 <h3 className="font-semibold mb-2">Performance</h3>
                 <p className="text-sm text-gray-400">Optimization, testing, and scalable solutions</p>
               </div>
+            </div> */}
+          <div className="grid grid-cols-2 gap-4">
+            <div className="bg-gradient-to-br from-purple-600/20 to-pink-600/20 p-6 rounded-xl border border-purple-500/20">
+              <Code className="w-12 h-12 text-purple-400 mb-4" />
+              <h3 className="font-semibold mb-2">Frontend Development</h3>
+              <p className="text-sm text-gray-400">React, Angular, TypeScript, and modern UI frameworks</p>
             </div>
+            <div className="bg-gradient-to-br from-blue-600/20 to-purple-600/20 p-6 rounded-xl border border-blue-500/20">
+              <Database className="w-12 h-12 text-blue-400 mb-4" />
+              <h3 className="font-semibold mb-2">Backend Development</h3>
+              <p className="text-sm text-gray-400">Node.js, Express, PHP, databases, and API design</p>
+            </div>
+            <div className="bg-gradient-to-br from-green-600/20 to-yellow-600/20 p-6 rounded-xl border border-green-500/20">
+              <Cloud className="w-12 h-12 text-green-400 mb-4" />
+              <h3 className="font-semibold mb-2">Cloud & Optimization</h3>
+              <p className="text-sm text-gray-400">
+                AWS services, CI/CD, DevOps, Unit & E2e testing, and optimization.
+              </p>
+            </div>
+            <div className="bg-gradient-to-br from-pink-600/20 to-red-600/20 p-6 rounded-xl border border-pink-500/20">
+              <Zap className="w-12 h-12 text-pink-400 mb-4" /> {/* Replace icon if desired */}
+              <h3 className="font-semibold mb-2">AI Automation</h3>
+              <p className="text-sm text-gray-400">
+                LLMs, AI agents, n8n, Make, LangChain, vector databases & intelligent workflow automation
+              </p>
+            </div>
+          </div>
           </div>
         </div>
       </section>
